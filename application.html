@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <meta http-equiv="X-UA-Compatible" content="ie=edge">
+          <title>Application Page</title>
+          
+           <link rel="stylesheet" href="styles.css">
+           <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        
+   <div class="containerB">   
+             <div class="header"> 
+            <div><img src="images/bongo-cat-pixel-doodle.gif" class="img-responsive" style="width: 200px; height: 100px" alt="logo"/></div>
+             <h1 style="text-align: center; font-family: arial black;">Sofiia Ponomarchuk</h1>
+             <div class="w3-bar w3-black">
+              <a href="index.html" class="w3-bar-item w3-button w3-padding-16">Home</a>
+              <a href="application.html" class="w3-bar-item w3-button w3-padding-16">Applications</a>
+              <a href="video.html" class="w3-bar-item w3-button w3-padding-16">Videos</a>
+              <a href="about.html" class="w3-bar-item w3-button w3-padding-16">About me</a>
+              <a href="contact.html" class="w3-bar-item w3-button w3-padding-16">Contact</a>          
+              <input type="text" class="w3-bar-item w3-input" placeholder="Search" />
+              <a href="http://www.google.com" class="w3-bar-item w3-button w3-padding-16 w3-blue">Go</a>
+              </div>           
+            </div>  
+
+       
+              <div class="sidebar">
+                  
+              </div>
+              
+              <div class="content-1">
+                 <h2 style="text-align: center"> Applications </h2>
+                   <p>You should complete this part of the coursework using the android studio development
+                      environment, as is installed on the lab computers. You are free to use a physical android device,
+                      with hardware debugging enabled to debug your application if you wish, but marking will be
+                      conducted in the android emulator (i.e. your screencast must be of the emulator) so I would
+                      recommend using that instead. The emulator should be configured to emulate a Google Nexus
+                      phone, running API 21, Android 5.0 (Lollipop).
+                      The app you develop will be similar to the contacts app we all have in our smart phones today as
+                      illustrated in figure 2, except your app will display employee information. The scenario is that
+                      you are developing this app for the manager of a company that needs to have up to date
+                      employee information to hand at all times.
+                      With this in mind your app should at the very least connect to the RESTful web service that you
+                      created in Java in order to retrieve the employee JSON data. The app should then parse the
+                      JSON data appropriately and display it on screen in an appropriate way (i.e. ListView).
+                   </p>
+              </div>
+       
+          <div class="content-2">
+              <img src="images/phone.png" alt="Mobile Application" class="imgPhone"/>
+              <h2 style="text-align: center">Code and Visual Quality (10%)</h2>
+                   <p>At a very minimum your app should display the name and email of all employees in the
+                      database. The better apps will have well thought out layout and style and display additional
+                      information to the user about the employees such as job title, salary etc. The overall look and
+                      design is up to you. The images/icons should be scaled appropriately, and the app should look
+                      reasonably well polished (sensibly laid out, readable text, standard contrasting text, icons
+                      and background colours colours). Your code should be sensibly designed, laid out
+                      consistently and well commented.
+                   </p>
+
+              <h2 style="text-align: center">Server</h2>
+                <p>Include some way of adding new employee information to the database. This can be achieved
+                   by adding another route to the HTTP server (e.g. http://localhost:8005/add_emp) which outputs
+                   an html form that can be filled and submitted by the user.
+                   Once submitted the server will need an additional route (e.g.
+                   http://localhost:8005/process_emp) which will process the data submitted by the user through
+                   the html form and add it to the SQLite database.
+                   Android App
+                   The tasks of talking to the server to retrieve data can sometimes take some time to complete.
+                   Leaving your app’s interface locked up whilst it performs this task is hardly going to enhance the
+                   user experience! In addition to this making network calls on the main app thread is not desirable
+                   in the app development world.
+                   Improve matters by handling the network calls that retrieve the data from your java server using
+                   the AsyncTask class, which will perform them in a new thread in the background. Remember
+                   to remove the StrictMode workaround discussed in lectures once threading is working.</p>
+          </div>
+       
+       
+       <div class="footer">
+            <p>
+                Copyright &copy;2022
+            </p>
+        
+                   <a href="#" class="fa fa-facebook"></a>
+                   <a href="#" class="fa fa-twitter"></a>
+                   <a href="#" class="fa fa-linkedin"></a>
+                   <a href="#" class="fa fa-youtube"></a>
+                   <a href="#" class="fa fa-instagram"></a>             
+        </div>
+  </div>   
+</body>
+</html>
